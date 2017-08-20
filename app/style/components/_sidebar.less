@@ -1,0 +1,81 @@
+.side-bar{
+}
+
+.active-status{
+  font-weight: bold;
+}
+
+
+.middle-side-bar-section {
+  position: relative;
+  ul{
+    margin-bottom: 0;
+    list-style: none;
+    margin-left: 0;
+  li{
+    &:before{
+      margin-right: 8px;
+      content: "■";
+      color: @dark-grey;
+    }
+    }
+  }
+  .right-tr{
+    position: absolute;
+    top: 15%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent transparent transparent @nav-color;
+    right: -10px;
+    z-index: 10;
+    padding: 0;
+  }
+}
+
+.side-bar{
+  button{
+    margin-bottom: 2.5rem;
+    background-color: @nav-font-color;
+    font-size: 12px;
+    font-family: @ubuntu-bold;
+  }
+  div{
+    padding: 1.5rem;
+  }
+  .middle-side-bar-section{
+    border-top: 1px solid @border-color;
+    border-bottom: 1px solid @border-color;
+  }
+}
+
+.top-side-bar-section{
+  a{
+    font-size: @font;
+    font-family: @ubuntu;
+    color: @dark-grey;
+  }
+}
+
+.middle-side-bar-section {
+  h6{
+    font-size: @font;
+    font-family: @ubuntu-bold;
+    color: @black;
+  }
+  a{
+    font-size: @font;
+    color: @nav-font-color;
+    font-family: @ubuntu;
+    font-weight: 300;
+  }
+}
+
+.bottom-side-bar-section{
+  a{
+    font-size: @font;
+    font-family: @ubuntu-bold;
+    color: @nav-font-color;
+  }
+}

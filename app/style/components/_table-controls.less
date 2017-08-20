@@ -1,0 +1,111 @@
+.with-search{
+  a{
+    text-align: left;
+    font-size: @font;
+    font-family: @ubuntu;
+    background-color: @nav-color;
+    border: 1px solid @dark-grey;
+    color: @black;
+    padding: 0.5rem !important;
+    .arrow-down{
+      padding-left: 2rem;
+      float: right;
+      margin-top: 1px;
+      color: @black;
+    }
+  }
+  .padding-button{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 14rem;
+    min-width: 14rem;
+  }
+  input{
+    font-size: @font;
+    font-family: @ubuntu;
+    max-width: none !important;
+    width: 20rem !important;
+    height: 32px;
+    background: url('../../img/search.png') no-repeat right 10px center;
+    margin-right: 1.5rem !important;
+  }
+}
+
+.drop{
+  position: relative;
+  &:hover{
+    a{
+      background-color: @nav-font-color;
+      color: @nav-color;
+    }
+    .dropdown-content{
+      display: block;
+    }
+  }
+  .dropdown-content {
+      left:1.5rem;
+      right: 1.5rem;
+      display: none;
+      position: absolute;
+      background-color: @nav-color;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 12;
+        a {
+          background-color: @nav-color;
+          border:none;
+          color: @black;
+          padding: 10px 16px;
+          text-decoration: none;
+          display: block;
+          z-index: 10;
+          line-height: 15px;
+          font-size: 0.95rem;
+          text-align: left;
+          &:hover{
+            background-color: @nav-font-color;
+            color: @nav-color;
+          }
+      }
+
+  }
+}
+
+.open-drop{
+  position: relative;
+  min-width: 13rem;
+  &:hover{
+    a{
+      background-color: @nav-font-color;
+      color: @nav-color;
+    }
+    .dropdown-content{
+      display: block;
+    }
+  }
+  .dropdown-content {
+      left:0;
+      right: 0;
+      display: none;
+      position: absolute;
+      background-color: @nav-color;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 12;
+        a {
+          background-color: @nav-color;
+          border:none;
+          color: @black;
+          padding: 10px 16px;
+          text-decoration: none;
+          display: block;
+          z-index: 10;
+          line-height: 15px;
+          font-size: 0.95rem;
+          text-align: left;
+          &:hover{
+            background-color: @nav-font-color;
+            color: @nav-color;
+          }
+      }
+
+  }
+}

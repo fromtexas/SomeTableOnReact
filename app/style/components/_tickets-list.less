@@ -1,0 +1,163 @@
+.tickets-list{
+  padding-left: 1rem !important;
+}
+
+.table-padding{
+  padding:0 2rem 1rem 2rem;
+  margin-bottom: 2rem;
+  background-color: @nav-color;
+  min-height: 70vh;
+}
+
+
+
+
+
+
+.tickets-list {
+  h3{
+      font-family: @ubuntu-bold;
+      margin-bottom: 2.5rem;
+      margin-top: -7px;
+  }
+  .open{
+    font-size: 1.5rem;
+    font-family: @ubuntu;
+  }
+  .add{
+    font-family: @ubuntu;
+    font-size: @font;
+    color: @nav-font-color;
+    display: inline-block !important;
+    padding: .7rem .5rem !important;
+  }
+  .border-bottom{
+    border-bottom: 1px solid @border-color;
+  }
+  .pagination{
+    font-family: @ubuntu;
+    font-size: @font;
+    font-weight: bold;
+    .current{
+       background-color: @nav-font-color;
+       padding: 0;
+       a{
+         color: @nav-color;
+         &:hover{
+           background-color: @nav-font-color;
+         }
+         &:focus{
+           outline: none;
+         }
+       }
+     }
+     li{
+       background-color: @border-color;
+       margin-right: 5px ;
+     }
+  }
+
+
+}
+
+table thead{
+  background-color: @nav-color !important;
+  color: @dark-grey !important;
+  cursor: pointer;
+  th{
+      position: relative;
+      font-family: @ubuntu;
+      font-weight: 400 !important;
+      &:first-of-type{
+        padding-left: 0 !important;
+      }
+      &:hover{
+        color: #999;
+      }
+  }
+  .arrow{
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 5px dashed;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      right: 5px;
+    }
+}
+}
+
+tr{
+  background-color: @nav-color !important;
+  td{
+    font-size: @font;
+    font-family: @ubuntu;
+    &:first-of-type{
+      padding-left: 0 !important;
+    }
+  }
+  .ticket-id, .ticket-title{
+    font-weight: 300;
+  }
+}
+
+thead, tbody{
+  border-left: none !important;
+  border-right:none !important;
+}
+
+
+
+.g-color{
+  color: @dark-grey;
+}
+
+h3{
+  img{
+    padding-right: 20px;
+  }
+}
+
+.per-page{
+  font-size: @font;
+  font-family: @ubuntu-bold;
+}
+
+
+.green-dot{
+  color: @green;
+}
+.red-dot{
+  color:@nav-font-color;
+}
+.gray-dot{
+  color: @dark-grey;
+}
+
+.per-page{
+  .current-amount{
+    color: @black;
+  }
+  a{
+    padding: 0.7rem 0.1rem 0.7rem 0.3rem !important;
+    color: @blue;
+  }
+  .per-page-title{
+    color: @dark-grey;
+    cursor:default;
+  }
+}
+
+
+
+.next{
+  display: none !important;
+}
+.previous{
+  display: none !important;
+}
